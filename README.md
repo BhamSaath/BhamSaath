@@ -135,12 +135,16 @@ This isn't a tutorial project. It's a real system with real engineering decision
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=BhamSaath&show_icons=true&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&hide_border=false&count_private=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=BhamSaath&show_icons=true&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&hide_border=false&count_private=true&rank_icon=github" height="170"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BhamSaath&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&layout=compact&langs_count=6" height="170"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=BhamSaath&theme=midnight-purple&border=7c3aed&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa&sideLabels=a78bfa" width="520"/>
+  <img src="https://streak-stats.demolab.com?user=BhamSaath&theme=midnight-purple&border=7c3aed&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa&sideLabels=a78bfa&dates=a78bfa" width="520"/>
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BhamSaath&theme=github_dark" width="720"/>
 </div>
 
 ---
