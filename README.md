@@ -90,7 +90,7 @@ fun_fact    : "Built a full cricket player management system in C++ — yes, ent
 
 <div align="center">
 
-[![Cricket Workload Tracker](https://github-readme-stats.vercel.app/api/pin/?username=BhamSaath&repo=cricket-workload-tracker&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa)](https://github.com/BhamSaath/cricket-workload-tracker)
+[![Cricket Workload Tracker](https://github-readme-stats.vercel.app/api/pin/?username=BhamSaath&repo=cricket-workload-tracker&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&cache_seconds=86400)](https://github.com/BhamSaath/cricket-workload-tracker)
 
 </div>
 
@@ -135,8 +135,8 @@ This isn't a tutorial project. It's a real system with real engineering decision
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=BhamSaath&show_icons=true&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&hide_border=false&count_private=true&rank_icon=github" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BhamSaath&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&layout=compact&langs_count=6" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=BhamSaath&show_icons=true&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&hide_border=false&rank_icon=github&cache_seconds=86400" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BhamSaath&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&layout=compact&langs_count=6&cache_seconds=86400" height="170"/>
 </div>
 
 <div align="center">
