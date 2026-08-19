@@ -135,16 +135,16 @@ This isn't a tutorial project. It's a real system with real engineering decision
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=BhamSaath&show_icons=true&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&hide_border=false&rank_icon=github&cache_seconds=86400" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BhamSaath&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&layout=compact&langs_count=6&cache_seconds=86400" height="170"/>
+  <img src="https://github-readme-stats-git-master-me-0de5.vercel.app/api?username=BhamSaath&show_icons=true&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&hide_border=false&rank_icon=github&cache_seconds=86400" height="170" alt="GitHub Stats" />
+  <img src="https://github-readme-stats-git-master-me-0de5.vercel.app/api/top-langs/?username=BhamSaath&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&layout=compact&langs_count=6&cache_seconds=86400" height="170" alt="Top Languages" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=BhamSaath&theme=midnight-purple&border=7c3aed&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa&sideLabels=a78bfa&dates=a78bfa" width="520"/>
+  <img src="https://streak-stats.demolab.com?user=BhamSaath&theme=midnight-purple&border=7c3aed&ring=a78bfa&fire=f59e0b&currStreakLabel=a78bfa&sideLabels=a78bfa&dates=a78bfa" width="520" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BhamSaath&theme=github_dark" width="720"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BhamSaath&theme=github_dark" width="720" alt="Profile Details" />
 </div>
 
 ---
