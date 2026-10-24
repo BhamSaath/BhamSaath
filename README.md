@@ -156,7 +156,6 @@ This isn't a tutorial project. It's a real system with real engineering decision
 | Badge | Certification | Platform | Status |
 |:---:|---|---|:---:|
 | 🎖️ | **GitHub Foundations** | LinkedIn Learning | ✅ Earned |
-| 🤖 | **GitHub Agentic AI** | GitHub | 🔄 In Progress |
 
 </div>
 
