@@ -57,7 +57,6 @@ fun_fact    : "Built a full cricket analytics engine in C++ that queries 23,000+
 
 **🔭 Currently Working On**
 - 🏏 Cricket Analytics & AI Matchup Engine — shipped, expanding
-- 📜 GitHub Agentic AI Certification
 - 🛠️ Expanding my C++ & Java project portfolio
 - 🔍 Actively hunting SWE internships
 - 🏏 Recently wrapped as Captain of Stevenson Cricket Club
