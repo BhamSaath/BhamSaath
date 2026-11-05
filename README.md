@@ -27,7 +27,7 @@
 name        : Saathwik Bhamidipaty
 location    : Chicago, IL 🏙️
 education   : B.S. Computer Science — University of Illinois Chicago
-              Expected Graduation: Summer 2028
+              Expected Graduation: Winter 2028
 focus       : Software Engineering Internships
 core_skills : [C++, Java, Swift, Python, SQLite, pybind11, Gemini API, Git]
 learning    : [YAML, Linux, GitHub Agentic AI]
