@@ -27,12 +27,12 @@
 name        : Saathwik Bhamidipaty
 location    : Chicago, IL 🏙️
 education   : B.S. Computer Science — University of Illinois Chicago
-              Expected Graduation: Summer 2029
+              Expected Graduation: Summer 2028
 focus       : Software Engineering Internships
-core_skills : [C++, Java, Swift, Python, Git]
+core_skills : [C++, Java, Swift, Python, SQLite, pybind11, Gemini API, Git]
 learning    : [YAML, Linux, GitHub Agentic AI]
 languages   : [English, Telugu, Hindi]
-fun_fact    : "Built a full cricket player management system in C++ — yes, entirely from scratch."
+fun_fact    : "Built a full cricket analytics engine in C++ that queries 23,000+ matches — yes, entirely from scratch."
 ```
 
 ---
@@ -45,14 +45,18 @@ fun_fact    : "Built a full cricket player management system in C++ — yes, ent
 
 **🎓 Coursework in Progress**
 - C Programming & Software Tools
+- Data Structures & Algorithms (CS 251)
+- Assembly & Machine Organization (CS 261)
 - Discrete Math for Computer Science
 - Engineering Probability & Statistics
+- Linear Algebra
 - Multivariable & Vector Calculus
 
 </td>
 <td width="50%">
 
 **🔭 Currently Working On**
+- 🏏 Cricket Analytics & AI Matchup Engine — shipped, expanding
 - 📜 GitHub Agentic AI Certification
 - 🛠️ Expanding my C++ & Java project portfolio
 - 🔍 Actively hunting SWE internships
@@ -77,8 +81,10 @@ fun_fact    : "Built a full cricket player management system in C++ — yes, ent
 | Area | What I Know |
 |---|---|
 | 🧱 Architecture | OOP, Multi-class Inheritance, Enumerations, Subclassing |
+| ⚡ Performance | C++/Python FFI via pybind11, shared library compilation |
 | 🔐 Security | Bcrypt hashing, password ≠ storage separation |
-| 💾 Data | JSON-based persistence (nlohmann/json), session reconstruction |
+| 💾 Data | SQLite indexing, JSON persistence (nlohmann/json) |
+| 🤖 AI & Backend | Gemini API, structured LLM prompting, REST APIs |
 | 🔗 Integration | API Integration, Error Analysis & Debugging |
 | 📐 Math | Multivariable Calculus, Linear Algebra |
 
@@ -86,39 +92,69 @@ fun_fact    : "Built a full cricket player management system in C++ — yes, ent
 
 ---
 
-## 🏗️ Featured Project
+## 🏗️ Featured Projects
 
-<div align="center">
+### 🏏 Cricket Analytics & AI Matchup Engine — *Hero Project*
+> *C++ aggregation engine + Python orchestration + Gemini API — querying 23,000+ real match records.*
+
+[![Cricket Stats Scraper](https://github-readme-stats.vercel.app/api/pin/?username=BhamSaath&repo=Cricket-Stats-Scraper&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&cache_seconds=86400)](https://github.com/BhamSaath/Cricket-Stats-Scraper)
+
+The core problem was speed. Parsing 23,000 raw JSON files per query took 2–3 minutes. The solution: index everything into SQLite once, write the aggregation layer in C++, and expose it to Python via a pybind11 shared library. Queries now run in milliseconds.
+
+```
+  User Input (player / venue)
+            │
+            ▼
+  ┌─────────────────────────┐
+  │   Python Orchestration  │
+  │   Routes query mode     │
+  │   (PVP or PVG)          │
+  └────────────┬────────────┘
+               │  pybind11 call
+               ▼
+  ┌─────────────────────────┐
+  │   C++ Aggregation Layer │
+  │   PVP.cpp / PVG.cpp     │
+  │   Queries SQLite        │
+  │   Computes per-format   │
+  │   stats per delivery    │
+  └────────────┬────────────┘
+               │  AggregateStats struct
+               ▼
+  ┌─────────────────────────┐
+  │   SQLite Database       │
+  │   23,000+ matches       │
+  │   indexed by player,    │
+  │   venue, match type     │
+  └────────────┬────────────┘
+               │
+               ▼
+  ┌─────────────────────────┐
+  │   Gemini API            │
+  │   Stats → prompt        │
+  │   Natural language out  │
+  └────────────┬────────────┘
+               ▼
+     Terminal output + summary
+```
+
+| What | How |
+|---|---|
+| ⚡ Performance | SQLite indexing dropped query time from 2–3 min → milliseconds |
+| 🔗 C++/Python bridge | pybind11 shared library (`statsPVP.so`) |
+| 🤖 AI layer | Gemini only sees computed stats — no hallucinated figures |
+| 📊 Query modes | PVP (head-to-head) and PVG (player at venue), all 3 formats |
+| 🛠️ Process | Solo end-to-end — architecture → C++ → Python → shipped |
+
+**[→ Explore the Repository](https://github.com/BhamSaath/Cricket-Stats-Scraper)**
+
+---
+
+### 🏏 Cricket Workload Tracker & Player Management System
 
 [![Cricket Workload Tracker](https://github-readme-stats.vercel.app/api/pin/?username=BhamSaath&repo=cricket-workload-tracker&theme=midnight-purple&border_color=7c3aed&title_color=a78bfa&icon_color=a78bfa&cache_seconds=86400)](https://github.com/BhamSaath/cricket-workload-tracker)
 
-</div>
-
-### 🏏 Cricket Workload Tracker & Player Management System
-> *A fully functional, terminal-based C++ application — designed, architected, and shipped solo.*
-
-This isn't a tutorial project. It's a real system with real engineering decisions.
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    System Architecture                          │
-│                                                                 │
-│   [ Coach Interface ]        [ Player Interface ]               │
-│         │                           │                           │
-│         ▼                           ▼                           │
-│   [ Roster Manager ]     [ Session / Injury Logger ]            │
-│         │                           │                           │
-│         └──────────┬────────────────┘                           │
-│                    ▼                                            │
-│           [ Core Class Hierarchy ]                              │
-│     3+ core classes · enumerations · role subclasses            │
-│                    │                                            │
-│          ┌─────────┴──────────┐                                 │
-│          ▼                    ▼                                 │
-│   [ BCrypt Auth ]    [ nlohmann/json Persistence ]              │
-│   password ≠ data     1 JSON file per account                   │
-└─────────────────────────────────────────────────────────────────┘
-```
+Terminal-based C++ application for coaches and players to manage rosters, training plans, sessions, and injury logs. Multi-class OOP architecture with Bcrypt auth and full JSON persistence across sessions.
 
 | What | How |
 |---|---|
@@ -126,7 +162,6 @@ This isn't a tutorial project. It's a real system with real engineering decision
 | 💾 Persistence | nlohmann/json — full session history survives across logins |
 | 🧩 Design | 3+ core classes, enumerations, role-specific subclasses |
 | 🎭 Roles | Dual-mode: Coach view & Player view |
-| 🛠️ Process | Solo end-to-end — architecture → implementation → testing |
 
 **[→ Explore the Repository](https://github.com/BhamSaath/cricket-workload-tracker)**
 
